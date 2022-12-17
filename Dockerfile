@@ -1,7 +1,6 @@
 FROM accetto/ubuntu-vnc-xfce-firefox-g3
 
-RUN wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add - \
-    && apt-get update \
+RUN apt-get update \
     && apt-get upgrade -y \
     && wget -c http://ftp.de.debian.org/debian/pool/main/g/gsl/libgsl25_2.6+dfsg-2_amd64.deb \
     && wget -c http://ftp.de.debian.org/debian/pool/main/g/gsl/libgslcblas0_2.6+dfsg-2_amd64.deb \
