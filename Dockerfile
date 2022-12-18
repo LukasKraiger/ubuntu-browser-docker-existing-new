@@ -15,12 +15,6 @@ RUN apt-get update \
     && add-apt-repository 'deb https://cloud.r-project.org/bin/linux/ubuntu focal-cran40/' \
     && apt-get update \
     && apt-get install r-base -y \
-    && apt-get install gdebi-core -y \
-    && wget https://download1.rstudio.org/electron/bionic/amd64/rstudio-2022.12.0-353-amd64.deb \
-    && apt-get autoremove -y \
-    && apt-get update \
-    && apt-get install -y libnss3 -y \
-    && gdebi -n ./rstudio-2022.12.0-353-amd64.deb \
     && apt-get install -y git \
     && apt-get install -y libreoffice \
     && apt-get update \
