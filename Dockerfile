@@ -1,5 +1,7 @@
 FROM accetto/ubuntu-vnc-xfce-firefox-g3
 
+USER root
+
 RUN apt-get update \
     && apt-get upgrade -y \
     && wget -c http://ftp.de.debian.org/debian/pool/main/g/gsl/libgsl25_2.6+dfsg-2_amd64.deb \
